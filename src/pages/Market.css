@@ -1,0 +1,202 @@
+.market-page {
+  padding: 20px 0;
+}
+
+.market-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-overview-card,
+.price-chart-card,
+.market-description-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+}
+
+.coin-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.coin-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.price-data {
+  text-align: right;
+}
+
+.current-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.price-change {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.price-change.positive {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+
+.price-change.negative {
+  background-color: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+
+.market-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.time-range-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.time-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #7f8c8d;
+  transition: all 0.3s ease;
+}
+
+.time-button:hover {
+  background-color: #eee;
+}
+
+.time-button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.market-description-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.description p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.links a {
+  padding: 8px 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .price-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .price-data {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .market-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .time-range-selector {
+    margin-top: 10px;
+  }
+  
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
